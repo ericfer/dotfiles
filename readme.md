@@ -1,10 +1,13 @@
-I'm using Stow to setup my dot files
+I'm using GNU Stow to setup my dot files
 
-Steps:
-> brew install stow
-> <clone repo>
-> cd dotfiles
-> stow -t ~ <package_name>
+### Steps:
+```
+git clone git@github.com:ericfer/dotfiles.git
+cd dotfiles
+brew install stow
+stow -t ~ */
+```
 
-#  -t aponta para a raiz a partir de onde os symlinks serão criados
-# <package_name> é o nome do diretório dentro do diretório dotfiles, que representa uma ferramenta que você quer configurar/linkar
+**Obs:**
+* -t aponta para a raiz a partir de onde os symlinks serão criados
+* */ configura todos os packages que tem no repo. Se não quiser configurar todos, pode atribuir o nome de um package específico
