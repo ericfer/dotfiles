@@ -1,0 +1,7 @@
+[user]
+	email = eric.fer@gmail.com
+	name = Eric Fer
+[core]
+	editor = code --wait
+[push]
+	autoSetupRemote = true
