@@ -16,7 +16,7 @@ setopt incappendhistory
 
 # Enable completion system
 autoload -Uz compinit
-compinit
+compinit -u
 
 # Case-insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
