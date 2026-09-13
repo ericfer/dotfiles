@@ -30,6 +30,10 @@ hs.hotkey.bind({"alt"}, "t", function()
     hs.application.launchOrFocus("iTerm")
 end)
 
+hs.hotkey.bind({"alt"}, "m", function()
+    hs.application.launchOrFocus("Activity Monitor")
+end)
+
 hs.hotkey.bind({"alt"}, "w", function()
     hs.urlevent.openURL("https://www.youtube.com/playlist?list=WL")
 end)
