@@ -1,4 +1,8 @@
 hs.hotkey.bind({"alt"}, "s", function()
+    hs.application.launchOrFocus("Slack")
+end)
+
+hs.hotkey.bind({"alt"}, "t", function()
     hs.application.launchOrFocus("Sublime Text")
 end)
 
@@ -26,7 +30,7 @@ hs.hotkey.bind({"alt"}, "v", function()
     hs.application.launchOrFocus("Visual Studio Code")
 end)
 
-hs.hotkey.bind({"alt"}, "t", function()
+hs.hotkey.bind({"alt"}, "r", function()
     hs.application.launchOrFocus("iTerm")
 end)
 
