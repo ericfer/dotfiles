@@ -31,7 +31,7 @@ hs.hotkey.bind({"alt"}, "v", function()
 end)
 
 hs.hotkey.bind({"alt"}, "r", function()
-    hs.application.launchOrFocus("iTerm")
+    hs.application.launchOrFocus("Ghostty")
 end)
 
 hs.hotkey.bind({"alt"}, "m", function()
