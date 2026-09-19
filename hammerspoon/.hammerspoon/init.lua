@@ -1,3 +1,7 @@
+hs.hotkey.bind({"alt"}, "l", function()
+    hs.application.launchOrFocus("Clockify Desktop")
+end)
+
 hs.hotkey.bind({"alt"}, "s", function()
     hs.application.launchOrFocus("Slack")
 end)
