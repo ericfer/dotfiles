@@ -31,7 +31,7 @@ alias ...='cd ../..'
 # Git aliases
 alias gs='git status'
 alias ga='git add'
-alias gc='git commit'
+alias gc='git commit -m'
 alias gp='git push'
 alias gl='git pull'
 alias glog='git log --oneline --graph'
@@ -54,6 +54,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 mkcd() {
     mkdir -p "$1" && cd "$1"
 }
+
 
 
 ## LOADING LIBS (at the end of file)
