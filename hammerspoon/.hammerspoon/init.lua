@@ -1,51 +1,41 @@
-hs.hotkey.bind({"alt"}, "l", function()
-    hs.application.launchOrFocus("Clockify Desktop")
-end)
+-- =========================================
+-- Creating Global Shortcuts
+-- =========================================
 
-hs.hotkey.bind({"alt"}, "s", function()
-    hs.application.launchOrFocus("Slack")
-end)
+-- Base key(s) for the shortcut
+local modifiers = {"alt"}
 
-hs.hotkey.bind({"alt"}, "t", function()
-    hs.application.launchOrFocus("Sublime Text")
-end)
+-- Applications and its keys
+local apps = {
+    l = "Clockify Desktop",
+    s = "Slack",
+    t = "Sublime Text",
+    i = "Calendar",
+    c = "Google Chrome",
+    e = "Evernote",
+    d = "Finder",
+    p = "Preview",
+    v = "Visual Studio Code",
+    r = "Ghostty",
+    m = "Activity Monitor",
+}
 
-hs.hotkey.bind({"alt"}, "i", function()
-    hs.application.launchOrFocus("Calendar")
-end)
+-- URLs
+local urls = {
+    w = "https://www.youtube.com/playlist?list=WL",
+    z = "https://www.linkedin.com/in/ericfer/",
+}
 
-hs.hotkey.bind({"alt"}, "c", function()
-    hs.application.launchOrFocus("Google Chrome")
-end)
+-- Register applications shortcuts
+for key, appName in pairs(apps) do
+    hs.hotkey.bind(modifiers, key, function()
+        hs.application.launchOrFocus(appName)
+    end)
+end
 
-hs.hotkey.bind({"alt"}, "e", function()
-    hs.application.launchOrFocus("Evernote")
-end)
-
-hs.hotkey.bind({"alt"}, "d", function()
-    hs.application.launchOrFocus("Finder")
-end)
-
-hs.hotkey.bind({"alt"}, "p", function()
-    hs.application.launchOrFocus("Preview")
-end)
-
-hs.hotkey.bind({"alt"}, "v", function()
-    hs.application.launchOrFocus("Visual Studio Code")
-end)
-
-hs.hotkey.bind({"alt"}, "r", function()
-    hs.application.launchOrFocus("Ghostty")
-end)
-
-hs.hotkey.bind({"alt"}, "m", function()
-    hs.application.launchOrFocus("Activity Monitor")
-end)
-
-hs.hotkey.bind({"alt"}, "w", function()
-    hs.urlevent.openURL("https://www.youtube.com/playlist?list=WL")
-end)
-
-hs.hotkey.bind({"alt"}, "z", function()
-    hs.urlevent.openURL("https://www.linkedin.com/in/ericfer/")
-end)
+-- Register URLs shortcuts
+for key, url in pairs(urls) do
+    hs.hotkey.bind(modifiers, key, function()
+        hs.urlevent.openURL(url)
+    end)
+end
