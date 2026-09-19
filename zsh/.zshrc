@@ -35,6 +35,7 @@ alias gc='git commit'
 alias gp='git push'
 alias gl='git pull'
 alias glog='git log --oneline --graph'
+alias gd='git diff'
 
 # Personalized aliases
 alias gohome="cd ~"
