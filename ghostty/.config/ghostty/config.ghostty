@@ -1,7 +1,18 @@
+## THEME
 # theme = Catppuccin Mocha
 theme = Gruber Darker
 
-#font-family = CaskaydiaCove Nerd Font
-font-family = Hack Nerd Font Mono Regular
+
+## FONT
+font-family = Hack Nerd Font
+font-family-bold = Hack Nerd Font Bold
+font-family-italic = Hack Nerd Font Italic
+font-family-bold-italic = Hack Nerd Font Bold Italic
+
 font-size = 14
+
+
+## OTHERS
 #background-opacity = 0.95
+
+
